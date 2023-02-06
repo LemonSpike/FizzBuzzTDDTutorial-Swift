@@ -13,9 +13,10 @@
 		D4901368299159B000F9B232 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4901366299159B000F9B232 /* Main.storyboard */; };
 		D490136A299159B100F9B232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4901369299159B100F9B232 /* Assets.xcassets */; };
 		D490136D299159B100F9B232 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D490136B299159B100F9B232 /* LaunchScreen.storyboard */; };
-		D4901378299159B200F9B232 /* FizzBuzzTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4901377299159B200F9B232 /* FizzBuzzTDDTests.swift */; };
 		D4901382299159B200F9B232 /* FizzBuzzTDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4901381299159B200F9B232 /* FizzBuzzTDDUITests.swift */; };
 		D4901384299159B200F9B232 /* FizzBuzzTDDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4901383299159B200F9B232 /* FizzBuzzTDDUITestsLaunchTests.swift */; };
+		D490139129915A5100F9B232 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D490139029915A5100F9B232 /* BrainTests.swift */; };
+		D490139329915A8B00F9B232 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D490139229915A8B00F9B232 /* Brain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +46,11 @@
 		D490136C299159B100F9B232 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D490136E299159B100F9B232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4901373299159B200F9B232 /* FizzBuzzTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4901377299159B200F9B232 /* FizzBuzzTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTDDTests.swift; sourceTree = "<group>"; };
 		D490137D299159B200F9B232 /* FizzBuzzTDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4901381299159B200F9B232 /* FizzBuzzTDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTDDUITests.swift; sourceTree = "<group>"; };
 		D4901383299159B200F9B232 /* FizzBuzzTDDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTDDUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D490139029915A5100F9B232 /* BrainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
+		D490139229915A8B00F9B232 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D4901369299159B100F9B232 /* Assets.xcassets */,
 				D490136B299159B100F9B232 /* LaunchScreen.storyboard */,
 				D490136E299159B100F9B232 /* Info.plist */,
+				D490139229915A8B00F9B232 /* Brain.swift */,
 			);
 			path = FizzBuzzTDD;
 			sourceTree = "<group>";
@@ -113,7 +116,7 @@
 		D4901376299159B200F9B232 /* FizzBuzzTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				D4901377299159B200F9B232 /* FizzBuzzTDDTests.swift */,
+				D490139029915A5100F9B232 /* BrainTests.swift */,
 			);
 			path = FizzBuzzTDDTests;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 					};
 					D4901372299159B200F9B232 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 						TestTargetID = D490135C299159B000F9B232;
 					};
 					D490137C299159B200F9B232 = {
@@ -260,6 +264,7 @@
 			files = (
 				D4901365299159B000F9B232 /* ViewController.swift in Sources */,
 				D4901361299159B000F9B232 /* AppDelegate.swift in Sources */,
+				D490139329915A8B00F9B232 /* Brain.swift in Sources */,
 				D4901363299159B000F9B232 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4901378299159B200F9B232 /* FizzBuzzTDDTests.swift in Sources */,
+				D490139129915A5100F9B232 /* BrainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3BX32XR8J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FizzBuzzTDD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,6 +470,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3BX32XR8J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FizzBuzzTDD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -489,14 +496,21 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kasprasolutions.FizzBuzzTDDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FizzBuzzTDD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FizzBuzzTDD";
@@ -508,10 +522,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kasprasolutions.FizzBuzzTDDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
