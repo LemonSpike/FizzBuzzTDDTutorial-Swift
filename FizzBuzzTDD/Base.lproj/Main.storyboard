@@ -63,30 +63,42 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fB-10-PWO">
                                         <rect key="frame" x="491" y="0.0" width="453" height="453"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzButton"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="champagne" title="">
                                             <backgroundConfiguration key="background" image="button_border" imageContentMode="scaleToFill"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GhB-Xa-b6o"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbw-xm-RrP">
                                         <rect key="frame" x="491" y="491" width="453" height="453"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzBuzzButton"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="space">
                                             <backgroundConfiguration key="background" image="button_border"/>
                                             <attributedString key="attributedTitle"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EVq-Xm-4yK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8C-nq-HdT">
                                         <rect key="frame" x="0.0" y="491" width="453" height="453"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="buzzButton"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="lightning">
                                             <backgroundConfiguration key="background" image="button_border"/>
                                             <attributedString key="attributedTitle"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3rd-DR-zfY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -124,6 +136,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buzzButton" destination="I8C-nq-HdT" id="M9o-u8-Agx"/>
+                        <outlet property="fizzButton" destination="9fB-10-PWO" id="5Xx-fQ-98D"/>
+                        <outlet property="fizzBuzzButton" destination="Pbw-xm-RrP" id="Slq-Kr-kZT"/>
                         <outlet property="numberButton" destination="sPO-qU-FHL" id="4Ub-Xf-bhf"/>
                     </connections>
                 </viewController>

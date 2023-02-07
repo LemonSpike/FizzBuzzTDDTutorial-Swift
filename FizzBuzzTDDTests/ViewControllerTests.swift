@@ -28,27 +28,27 @@ final class ViewControllerTests: XCTestCase {
     }
     
     func testMove1IncrementsScore() {
-        viewController.play(move: "1")
+        viewController.play(move: .number)
         let newScore = viewController.gameScore
         XCTAssertEqual(newScore, 1)
     }
     
     func testMove2IncrementScore() {
-        viewController.play(move: "1")
-        viewController.play(move: "2")
+        viewController.play(move: .number)
+        viewController.play(move: .number)
         let newScore = viewController.gameScore
         XCTAssertEqual(newScore, 2)
     }
     
     func testMoveFizzIsCorrectIncrementsScore() {
         viewController.game?.score = 2
-        viewController.play(move: "Fizz")
+        viewController.play(move: .fizz)
         XCTAssertEqual(viewController?.gameScore, 3)
     }
     
     func testMoveFizzIsIncorrectDoesNotIncrementScore() {
         viewController.game?.score = 1
-        viewController.play(move: "Fizz")
+        viewController.play(move: .fizz)
         XCTAssertEqual(viewController?.gameScore, 1)
     }
     

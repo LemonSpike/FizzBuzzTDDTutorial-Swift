@@ -20,6 +20,7 @@
 		D4901397299168FD00F9B232 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4901396299168FD00F9B232 /* Game.swift */; };
 		D49013992992848D00F9B232 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49013982992848D00F9B232 /* ViewControllerTests.swift */; };
 		D490139B29929F2F00F9B232 /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D490139A29929F2F00F9B232 /* ViewControllerUITests.swift */; };
+		D4D7F2E42992C60400D00EA8 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7F2E32992C60400D00EA8 /* Move.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		D4901396299168FD00F9B232 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		D49013982992848D00F9B232 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		D490139A29929F2F00F9B232 /* ViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
+		D4D7F2E32992C60400D00EA8 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				D490136E299159B100F9B232 /* Info.plist */,
 				D490139229915A8B00F9B232 /* Brain.swift */,
 				D4901396299168FD00F9B232 /* Game.swift */,
+				D4D7F2E32992C60400D00EA8 /* Move.swift */,
 			);
 			path = FizzBuzzTDD;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				D4901397299168FD00F9B232 /* Game.swift in Sources */,
 				D4901361299159B000F9B232 /* AppDelegate.swift in Sources */,
 				D490139329915A8B00F9B232 /* Brain.swift in Sources */,
+				D4D7F2E42992C60400D00EA8 /* Move.swift in Sources */,
 				D4901363299159B000F9B232 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
