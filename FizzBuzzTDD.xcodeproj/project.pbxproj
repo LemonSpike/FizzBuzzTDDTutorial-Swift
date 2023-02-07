@@ -19,6 +19,7 @@
 		D490139329915A8B00F9B232 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D490139229915A8B00F9B232 /* Brain.swift */; };
 		D4901395299168BE00F9B232 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4901394299168BE00F9B232 /* GameTests.swift */; };
 		D4901397299168FD00F9B232 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4901396299168FD00F9B232 /* Game.swift */; };
+		D49013992992848D00F9B232 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49013982992848D00F9B232 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D490139229915A8B00F9B232 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		D4901394299168BE00F9B232 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		D4901396299168FD00F9B232 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		D49013982992848D00F9B232 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				D490139029915A5100F9B232 /* BrainTests.swift */,
 				D4901394299168BE00F9B232 /* GameTests.swift */,
+				D49013982992848D00F9B232 /* ViewControllerTests.swift */,
 			);
 			path = FizzBuzzTDDTests;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49013992992848D00F9B232 /* ViewControllerTests.swift in Sources */,
 				D490139129915A5100F9B232 /* BrainTests.swift in Sources */,
 				D4901395299168BE00F9B232 /* GameTests.swift in Sources */,
 			);
