@@ -11,11 +11,30 @@ class ViewController: UIViewController {
     
     var game: Game?
     
-    var gameScore: Int?
+    var gameScore: Int? {
+        didSet {
+            if let gameScore {
+                numberButton.setTitle("\(gameScore)", for: .normal)
+            }
+        }
+    }
+    
+    @IBOutlet weak var numberButton: UIButton!
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        guard let unwrappedScore = gameScore else {
+            print("Game score is nil")
+            return
+        }
+        
+        let nextScore = unwrappedScore + 1
+        play(move: "\(nextScore)")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         game = Game(brain: Brain())
+        gameScore = game?.score
     }
     
     func play(move: String) {

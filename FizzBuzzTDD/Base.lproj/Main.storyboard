@@ -42,6 +42,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPO-qU-FHL">
                                         <rect key="frame" x="0.0" y="0.0" width="453" height="453"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="numberButton"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" image="button_border"/>
@@ -56,6 +57,9 @@
                                             </attributedString>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gLB-8I-UwX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fB-10-PWO">
                                         <rect key="frame" x="491" y="0.0" width="453" height="453"/>
@@ -119,6 +123,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="32z-Mo-DXi" secondAttribute="trailing" constant="30" id="xRv-ET-3le"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberButton" destination="sPO-qU-FHL" id="4Ub-Xf-bhf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
